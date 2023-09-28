@@ -1,11 +1,10 @@
-let boxBuscar = document.querySelector('.buscar-box');
-let lupa = document.querySelector('.lupa-buscar');
-let btnFechar = document.querySelector('.btn-fechar');
+const url = "file:///C:/Users/victo/OneDrive/%C3%81rea%20de%20Trabalho/Cod-Flix-main/Cod-Flix-main/c%C3%B3digo%20flix/js/login.html#"
+const btnLogin = document.querySelector('.btnLogin-popup')
 
-lupa.addEventListener('click', ()=>{
-    boxBuscar.classList.add('ativar')
-})
+function openInNewTab(url) {
+    const win = window.open(url, '_blank')
+}
 
-btnFechar.addEventListener('click', ()=>{
-    boxBuscar.classList.remove('ativar')
+btnLogin.addEventListener('click', ()=>{
+ openInNewTab(url)
 })
